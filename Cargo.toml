@@ -1,0 +1,18 @@
+[package]
+name = "pte-c-api"
+version = "0.1.0"
+edition = "2021"
+authors = ["Fan Yang <missdeer@gmail.com>"]
+keywords = ["plantuml", "encoding", "deflate", "c-api"]
+license = "MPL-2.0"
+categories = ["graphics", "encoding"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+plantuml_encoding = "2.0.3"
+
+[lib]
+name = "pte"
+crate-type = ["cdylib", "staticlib"]
