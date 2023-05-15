@@ -15,4 +15,7 @@ plantuml_encoding = "2.0.3"
 
 [lib]
 name = "pte"
-crate-type = ["cdylib", "staticlib"]
+crate-type = ["staticlib"]
+
+[target.x86_64-pc-windows-gnu]
+linker = "clang++.exe"
